@@ -1,0 +1,198 @@
+<link rel="stylesheet" href="bootstrap.min.css">
+
+<link href="popup.css" rel="stylesheet" type="text/css" />
+
+<script src="popup.js"></script>
+<script src="functions.js"></script>
+<script src="saved.js"></script>
+
+<script src="Chart.bundle.min.js"></script>
+<script src="chartjs-plugin-annotation.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+
+
+
+
+
+<!DOCTYPE html>
+
+<style>
+
+  #myTable{
+    font-size: 10px;
+    display: none;
+  }
+
+  #pls{
+    color: red;
+  }
+
+  #pls1{
+    color: green;
+  }
+
+  #incorrect{
+    color: red;
+    font-size: 15px;
+  }
+
+  /* #h1{
+    margin-top: 20px;
+  } */
+
+
+ 
+
+
+  
+
+  
+  /* .chart-container canvas {
+    height: 100% !important;
+    width: 100% !important;
+  } */
+  
+</style>
+
+
+
+<html>
+
+  <div id = "Kontainer">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+
+    <head>
+      <title>My Chrome Extension Popup</title>
+    </head>
+    
+    <body id = "body">
+        <div id = "container">
+          <h1>FRC Search</h1>
+
+          <h1 id = "incorrect">Please Input A Proper Team or Year</h1>
+
+          <div id = "NameContainer">
+            <label for="inputField" class="teamInput-label">Team Number:</label>
+            <input type="text" id="teamInput" autocomplete="off" required>
+          </div>
+
+          <div id = "YearContainer">
+            <label for="inputField" class="yearInput-label">Year:</label>
+
+            <input type="text" id="yearInput" autocomplete="off" required>
+          </div>
+
+          <!-- Buttons -->
+          <button class="button button-with-logoTBA" id = "test">   TBA</button>
+
+          <button class = "buttonStat button-with-logoStat" id = "redirect">Statbotics</button>
+
+          <!-- TeamData -->
+
+          <h2 id = "loadingBefore">Loading</h2>
+
+          <h2 id="WebsiteTitles">Websites:</h2>
+
+          <ul id = "WebsiteList">
+            <!-- <li>Ha</li> -->
+          </ul>
+
+          <h2 id = "loadingTeamData">Loading Team Data</h2>
+
+          <h2 id = "teamDataTitle">Team Data:</h2>
+
+          <ul id="teamData"></ul>
+
+          <!-- EventWins Dropdown-->
+
+          <h2 id = "loadingWins">Competed Events Loading</h2>
+
+          <div id="dropdownSuperContainer" class="visible">
+            <div class="dropdown-container">
+                <div class="dropdown-header">
+                    <h2 id="loading">Competed Events</h2>
+                    <div class="dropdown-triangle" id="dropdown-triangle"></div>
+                </div>
+                <ul class="dropdown-content" id="myDropdown">
+                
+                </ul>
+            </div>
+          </div>
+
+          <!-- Stats Year -->
+
+          <h2 id = "statsYearLoading">Stats For This Year Loading</h2>
+
+          <div id="statsYearSuperContainer" class="visible">
+            <div class="statsYear-container" id="statsYear-container">
+                <div class="dropdown-header">
+                    <h2>Team Stats This Year</h2>
+                    <div class="dropdown-triangle" id="dropdown-triangleStats"></div>
+                </div>
+                <ul class="dropdown-content" id="statsYearDropdown">
+                
+                </ul>
+            </div>
+          </div>
+
+          <!-- Stats Team -->
+
+          <h2 id = "statsTeamLoading">Stats For The Team Loading</h2>
+
+          <div id="statsTeamSuperContainer" class="visible">
+            <div class="statsTeam-container" id="statsTeam-container">
+                <div class="dropdown-header">
+                    <h2>Team Stats Over Time</h2>
+                    <div class="dropdown-triangle" id="dropdown-triangleStatsTeam"></div>
+                </div>
+                <ul class="dropdown-content" id="statsTeamDropdown">
+                
+                </ul>
+            </div>
+          </div>
+
+          <table class="table table-hover" id = "myTable">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Rank</th>
+                <th scope="col">Won?</th>
+                <!-- <th scope="col">Grade</th>
+                <th scope="col">Weighted?</th> -->
+  
+              </tr>
+            </thead>
+            <tbody id = "pls1">
+                <tr id = "">
+<!--   
+                  <td id = "sdf"></td>
+                  <td id = "sdf"></td>
+                  <td id = "sdf"></td>
+                  <td id = "sfd"></td>
+                  <td id = "sdf"></td> -->
+  
+  
+  
+               
+                </tr>
+             
+            </tbody>
+          </table>
+
+
+        </div>
+
+        <div id = "charts">
+          <canvas id="myChart"></canvas>
+    
+          <canvas id="epaOverTime"></canvas>
+    
+        </div>
+     
+    </body>
+
+
+    
+  </div>
+  
+</html>

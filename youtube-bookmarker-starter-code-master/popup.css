@@ -1,0 +1,346 @@
+#body {
+  /* margin: 0; */
+  /* padding: 0; */
+  /* height: 100%; */
+
+  width: 400px;
+  height: 200px;
+  /* border: solid; */
+  overflow: auto;
+  font-size: 10px;
+  margin-left: 5px;
+  
+  /* max-height: 400px; */
+  /* height: 300px;  */
+}
+
+#incorrect{
+  display: none;
+}
+
+
+#loadingBefore{
+  margin-top: 5px;
+  display: none;
+}
+
+
+/* #Kontainer{
+  border =
+  width: 10px;
+} */
+
+#extensionContainer {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* width: 400px; */
+  /* max-height: 400px; */
+  /* height: 400px;  */
+}
+
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.textbox {
+  width: 100%;
+  font-size: 12px;
+  margin: 0;
+  padding: 0px 2px;
+}
+
+.textbox:focus {
+  outline: 0;
+  border-color: #66afe9;
+}
+
+.bookmarks {
+  margin: 5px 5px;
+  padding: 3px;
+}
+
+.bookmark {
+  display: flex;
+  border-bottom-color: #00254d;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-radius: 0.8rem;
+  padding: 3px;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+.bookmark-title {
+  padding-left: 2px;
+}
+
+.bookmark-controls img {
+  margin: 0 4px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.bookmark-controls {
+  flex: auto;
+  text-align: right;
+}
+
+
+
+
+
+/* Miscelanous */
+/* 400px */
+
+
+h1 {
+  font-size: 18px; /* Adjust the font size as needed */
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 12px; /* Adjust the font size as needed */
+  font-weight: 400; /* Adjust the font weight as needed */
+
+}
+
+h3{
+  font-size: 12px; /* Adjust the font size as needed */
+  font-weight: 400; /* Adjust the font weight as needed */
+}
+
+ul {
+  list-style-type: disc; /* Change to disc, square, none, etc. for different bullet styles */
+  padding-left: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #f0f0f0; 
+  width: 50px; 
+  height: 30px; 
+  text-align: center; /* Center the text within the button */
+  padding-left: 20px; 
+  padding-right: 30px; 
+  transition: transform 0.3s; /* Add transition for smooth hover effect */
+  border: 1px solid black;
+  /* box-shadow: 0 9px #999; */
+}
+
+.buttonStat {
+  display: inline-block;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #f0f0f0; 
+  width: 97px; 
+  height: 30px; 
+  text-align: center; /* Center the text within the button */
+  padding-left: 33px; 
+  padding-right: 30px; 
+  border: 1px solid black;
+  /* box-shadow: 0 9px #999; */
+}
+
+/* Style for the button with logo */
+.button-with-logoTBA {
+  background-image: url('logo_square_512.png');
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-size: 30% 60%;
+  /* padding-left: 50px;  */
+  /* padding-right: 50px; */
+}
+
+.button-with-logoStat {
+  background-image: url('statbotics.png');
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-size: 20% 60%;
+  /* padding-left: 50px;  */
+  /* padding-right: 50px; */
+}
+
+/* .button:active {
+  background-color: #FF0000; 
+  transform: translateY(0); 
+} */
+
+#test:active {
+  background-color: #635f5f;
+}
+
+#redirect:active {
+  background-color: #635f5f;
+}
+
+.active-button {
+  background-color: #FF0000; 
+}
+
+.button:hover {
+  /* opacity: 0.5; */
+  transform: translateY(-0.6px); /* Move the button up by 5px on hover */
+  background-color: #A9A9A9; /* Change the background color on hover */
+}
+
+.buttonStat:hover {
+  /* opacity: 0.5;  */
+  transform: translateY(-0.6px); /* Move the button up by 5px on hover */
+  background-color: #A9A9A9; /* Change the background color on hover */
+}
+
+/* Name and Year Input */
+
+#NameContainer{
+  margin-bottom: 10px;
+  display: flex;
+}
+
+#YearContainer{
+  margin-bottom: 10px;
+  display: flex;
+
+}
+
+/* Dropdown */
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-triangle {
+  border: solid;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3.5px;
+  transform: rotate(-45deg);
+  transition: transform 0.3s ease; 
+  margin-top: -6px;
+  margin-bottom: 0px;
+  margin-left: 3px;
+}
+
+#dropdownSuperContainer {
+  display: none; /*flex */
+  align-items: center;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+
+.dropdown-container {
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+
+.dropdown-content{
+  margin-top: 5px;
+  /* border: solid; */
+}
+
+.dropdown-container.active .dropdown-content {
+  display: block;
+}
+
+.dropdown-container.active .dropdown-triangle {
+  transform: rotate(45deg);
+}
+
+/* Stats Year/Team */
+.statsYear-container{
+
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+
+
+.statsYear-container.active .dropdown-content {
+  display: block;
+}
+
+.statsYear-container.active .dropdown-triangle {
+  transform: rotate(45deg);
+}
+
+
+
+#statsTeamSuperContainer{
+  display: none;
+  align-items: center;
+}
+
+#statsYearSuperContainer {
+  display: none;
+  align-items: center;
+}
+
+.statsTeam-container{
+  cursor: pointer;
+  margin-top: 0px;
+}
+
+/* Loading/Titles */
+#statsYearLoading{
+  display: none;
+}
+
+#statsTeamLoading{
+  display: none;
+}
+
+#loadingWins{
+  display: none;
+}
+
+#eventsWonText{
+  display: none;
+}
+
+#loadingTeamData{
+  display: none;
+}
+
+#teamDataTitle{
+  display: none;
+}
+
+.teamInput-label{
+  margin-right: 5px;
+}
+
+.yearInput-label{
+  margin-right: 5px;
+}
+
+#charts{
+  /* border: solid; */
+  /* display: none; */
+  /* height: 0px; */
+}
+
+#WebsiteTitles{
+  display: none;
+  margin-top: 5px;
+}
+
+
+
+
+
+
